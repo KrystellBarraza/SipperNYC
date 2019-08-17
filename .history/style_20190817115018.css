@@ -30,7 +30,7 @@ a {
     color: #fff;
 }
 
-/* Header - Home */
+/* Header */
 
 .container-home {  
     display: grid;      
@@ -180,6 +180,10 @@ nav > li {
         display: none;
     }
 
+    .inlineMenu {
+        display: none;
+    }
+
     .container-home {  
         display: grid;      
         grid-template-columns: repeat(12, 1fr);  
@@ -201,22 +205,6 @@ nav > li {
     }
 
 }
-
-/* Inline Menu Queries */
-
-@media only screen and (max-width: 416px) {
-    .inlineMenu {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 766px){
-    .inlineMenu {
-        display: none;
-    }
-}
-
-/* Mobile Landscape Queries */
 
 @media (orientation: landscape) and (max-width: 766px) {
     .menu {
@@ -262,5 +250,3 @@ nav > li {
     grid-area: f; 
     height: 70px;
 } 
-
-/* Video */

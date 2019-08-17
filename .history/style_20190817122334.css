@@ -30,7 +30,7 @@ a {
     color: #fff;
 }
 
-/* Header - Home */
+/* Header */
 
 .container-home {  
     display: grid;      
@@ -262,5 +262,3 @@ nav > li {
     grid-area: f; 
     height: 70px;
 } 
-
-/* Video */

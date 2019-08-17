@@ -30,7 +30,7 @@ a {
     color: #fff;
 }
 
-/* Header - Home */
+/* Header */
 
 .container-home {  
     display: grid;      
@@ -54,18 +54,10 @@ a {
 
 .inlineMenu {
     font-family: 'Kanit', sans-serif; 
-    font-size: 22px;
-    word-spacing: 1em;
-    top: 16%; 
+    font-size: 20px;
+    top: 12%; 
     right: 10%;
     position: absolute;
-}
-
-@media (min-width: 566px) and (max-width: 569px) {
-    .inlineMenu {
-        top: 19.5%;
-        word-spacing: .5em;
-    }
 }
 
 /* Toggled Header Nav */ 
@@ -200,23 +192,11 @@ nav > li {
         width: 100%; 
     }
 
-}
-
-/* Inline Menu Queries */
-
-@media only screen and (max-width: 416px) {
     .inlineMenu {
         display: none;
     }
-}
 
-@media only screen and (min-width: 766px){
-    .inlineMenu {
-        display: none;
-    }
 }
-
-/* Mobile Landscape Queries */
 
 @media (orientation: landscape) and (max-width: 766px) {
     .menu {
@@ -262,5 +242,3 @@ nav > li {
     grid-area: f; 
     height: 70px;
 } 
-
-/* Video */

@@ -30,7 +30,7 @@ a {
     color: #fff;
 }
 
-/* Header - Home */
+/* Header */
 
 .container-home {  
     display: grid;      
@@ -50,22 +50,6 @@ a {
 
 .head {      
     grid-area: h;  
-}
-
-.inlineMenu {
-    font-family: 'Kanit', sans-serif; 
-    font-size: 22px;
-    word-spacing: 1em;
-    top: 16%; 
-    right: 10%;
-    position: absolute;
-}
-
-@media (min-width: 566px) and (max-width: 569px) {
-    .inlineMenu {
-        top: 19.5%;
-        word-spacing: .5em;
-    }
 }
 
 /* Toggled Header Nav */ 
@@ -123,7 +107,19 @@ li {
     line-height: 46pt;
 }
 
-/* Toggled Menu Media Queries */
+/* Toggled Media Queries */
+
+@media only screen and (min-width: 320px) {
+    h2 {
+        font-size: 24px; 
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    h2 {
+        font-size: 32px; 
+    }
+}
 
 @media only screen and (max-width: 450px) {
     nav {
@@ -145,6 +141,18 @@ li {
     }
 }
 
+@media only screen and (min-width: 767px) {
+    h2 {
+        font-size: 56px;
+    }
+}
+
+@media only screen and (min-width: 1023px) {
+    h2 {
+        font-size: 78px;
+    }
+}
+
 /* Menu */
     
 .menu {  
@@ -155,12 +163,13 @@ li {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    margin-top: 356px;
+    margin-top: 300px;
 }
 
 .side-nav { 
     align-self: flex-end;
     margin-top: 30px; 
+    margin-bottom: auto; 
 }
 
 nav > a {
@@ -199,49 +208,6 @@ nav > li {
         object-fit: contain; 
         width: 100%; 
     }
-
-}
-
-/* Inline Menu Queries */
-
-@media only screen and (max-width: 416px) {
-    .inlineMenu {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 766px){
-    .inlineMenu {
-        display: none;
-    }
-}
-
-/* Mobile Landscape Queries */
-
-@media (orientation: landscape) and (max-width: 766px) {
-    .menu {
-        display: none;
-    }
-
-    .container-home {  
-        display: grid;      
-        grid-template-columns: repeat(12, 1fr);  
-        grid-template-rows: auto 2fr 1fr;  
-        grid-gap: 5px;  
-        padding-left: 8%;
-        padding-right: 8%;
-        grid-template-areas:  
-        "h h h h h h h h h h h h"  
-        "c c c c c c c c c c c c"  
-        "c c c c c c c c c c c c"
-        "c c c c c c c c c c c c"
-        "f f f f f f f f f f f f";
-    }
-
-    .album > img {
-        object-fit: contain; 
-        width: 100%; 
-    }    
 }
 
 /* Album */
@@ -262,5 +228,3 @@ nav > li {
     grid-area: f; 
     height: 70px;
 } 
-
-/* Video */

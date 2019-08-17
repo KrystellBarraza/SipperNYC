@@ -30,7 +30,7 @@ a {
     color: #fff;
 }
 
-/* Header - Home */
+/* Header */
 
 .container-home {  
     display: grid;      
@@ -52,19 +52,11 @@ a {
     grid-area: h;  
 }
 
-.inlineMenu {
-    font-family: 'Kanit', sans-serif; 
-    font-size: 22px;
-    word-spacing: 1em;
-    top: 16%; 
-    right: 10%;
-    position: absolute;
-}
+/* Horizontal Menu */ 
 
-@media (min-width: 566px) and (max-width: 569px) {
-    .inlineMenu {
-        top: 19.5%;
-        word-spacing: .5em;
+@media only screen and (max-width: 415px) {
+    #inlineMenu {
+        display: none;
     }
 }
 
@@ -202,22 +194,6 @@ nav > li {
 
 }
 
-/* Inline Menu Queries */
-
-@media only screen and (max-width: 416px) {
-    .inlineMenu {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 766px){
-    .inlineMenu {
-        display: none;
-    }
-}
-
-/* Mobile Landscape Queries */
-
 @media (orientation: landscape) and (max-width: 766px) {
     .menu {
         display: none;
@@ -262,5 +238,3 @@ nav > li {
     grid-area: f; 
     height: 70px;
 } 
-
-/* Video */
