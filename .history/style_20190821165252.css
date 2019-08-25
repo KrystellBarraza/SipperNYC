@@ -442,11 +442,6 @@ nav > li {
     grid-area: h;  
 }
 
-.footer-music {
-    grid-area: f; 
-    height: 70px; 
-}
-
 .ep {  
     grid-area: e;  
 }
@@ -532,61 +527,6 @@ i.fab:hover {
     }
 }
 
-@media screen and (max-width: 824px) {
-    .music-k > .ep-title {
-        font-size: 36px; 
-        text-align: center;
-    }
-    
-    i {
-        font-size: 36px;
-    }
-    
-    .container-music {  
-        display: grid;      
-        grid-template-columns: repeat(12, 1fr);  
-        grid-template-rows: 1fr 1fr 1fr auto;  
-        grid-gap: 5px; 
-        grid-column-gap: 20px;  
-        padding-left: 8%;
-        padding-right: 8%;
-        grid-template-areas:  
-        "h h h h h h h h h h h h"  
-        "e e e e e e k k k k k k"  
-        "e e e e e e k k k k k k"
-        "g g g g g g j j j j j j"
-        "f f f f f f f f f f f f";
-    }
-
-    .listen {
-        margin-top: 10px; 
-    }
-
-    .fabIcons {
-        margin-top: 10px;
-    }
-}
-
-@media (orientation: landscape) and (max-width: 668px) {
-    .music-k > .ep-title {
-        font-size: 25px; 
-    }
-
-    .music-k > table {
-        font-size: 14px; 
-        width: 100%;
-        text-align: center;
-    }
-
-    .listen {
-        margin-top: 0; 
-    }
-
-    .fabIcons {
-        margin-top: 0;
-    }
-}
-
 @media only screen and (max-width: 416px) {
     .container-music {  
         display: grid;      
@@ -627,36 +567,42 @@ i.fab:hover {
         margin-bottom: 25px; 
     }
 
-    .footer-music {
-        display: none;
+}
+
+@media (orientation: landscape) and (max-width: 668px) {
+    .music-k > .ep-title {
+        font-size: 28px; 
     }
 
+    .music-k > table {
+        font-size: 14px; 
+        width: 100%;
+        text-align: center;
+    }
 }
 
-/* Shows */
-
-.container-shows {  
-    display: grid;      
-    grid-template-columns: repeat(12, 1fr);  
-    grid-template-rows: repeat(6, 1fr);  
-    grid-gap: 5px; 
-    grid-column-gap: 20px;  
-    padding-left: 8%;
-    padding-right: 8%;
-    grid-template-areas:  
-    "h h h h h h h h h h h h"  
-    "m m m m m m m m m m m m"  
-    "n n n n n n n n n n n n"
-    "o o o o o o o o o o o o"
-    "p p p p p p p p p p p p"
-    "f f f f f f f f f f f f";
-}
-
-.head-shows {      
-    grid-area: h;  
-}
-
-.footer-shows {
-    grid-area: f; 
-    height: 70px; 
+@media (orientation: landscape) and (max-width: 824px) {
+    .music-k > .ep-title {
+        font-size: 36px; 
+        text-align: center;
+    }
+    
+    i {
+        font-size: 36px;
+    }
+    
+    .container-music {  
+        display: grid;      
+        grid-template-columns: repeat(12, 1fr);  
+        grid-template-rows: repeat(4, 1fr);  
+        grid-gap: 5px; 
+        grid-column-gap: 20px;  
+        padding-left: 8%;
+        padding-right: 8%;
+        grid-template-areas:  
+        "h h h h h h h h h h h h"  
+        "e e e e e e k k k k k k"  
+        "e e e e e e k k k k k k"
+        "g g g g g g j j j j j j";
+    }
 }

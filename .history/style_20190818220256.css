@@ -266,27 +266,29 @@ nav > li {
     width: 100%; 
     max-height: 600px;
 }
+
+/* Footer */
     
 .footer {
     grid-area: f; 
     height: 70px;
 } 
 
-
 /* Video */
 
 .container-video {  
     display: grid;      
     grid-template-columns: repeat(12, 1fr);  
-    grid-template-rows: auto 1fr 1fr;  
+    grid-template-rows: auto 2fr 1fr;  
     grid-gap: 5px; 
     grid-column-gap: 20px;  
     padding-left: 8%;
     padding-right: 8%;
     grid-template-areas:  
     "h h h h h h h h h h h h"  
-    "a a a a a a b b b b b b"  
-    "c c c c c c d d d d d d"
+    "c c c c c c c c c c c c"  
+    "c c c c c c c c c c c c"
+    "c c c c c c c c c c c c"
     "f f f f f f f f f f f f";
 }
 
@@ -294,39 +296,18 @@ nav > li {
     grid-area: h;  
 }
 
-.video-a {
-    grid-area: a; 
-    justify-self: center;
-}
-
-.video-b {
-    grid-area: b;
-    justify-self: center;
-}
-
-.video-c {
-    grid-area: c;
-    justify-self: center;
-}
-
-.video-d {
-    grid-area: d;
-    justify-self: center;
-}
-
-.footer-video {
-    grid-area: f; 
-    height: 70px; 
-}
-
 .container .title {
+    color: #1a1a1a;
     text-align: center;
+    margin-bottom: 10px;
 }
   
 .content {
     position: relative;
-    width: 100%;
+    width: 90%;
     max-width: 550px;
+    left: 8%;
+    margin: 0;
     overflow: hidden;
 }
   
@@ -335,6 +316,10 @@ nav > li {
     position: absolute;
     height: 99%;
     width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
     opacity: 0;
     -webkit-transition: all 0.4s ease-in-out 0s;
     -moz-transition: all 0.4s ease-in-out 0s;
@@ -377,8 +362,12 @@ nav > li {
     font-weight: 500;
     letter-spacing: 0.15em;
     margin-bottom: 0.5em;
-    font-size: 0.8em;
     text-transform: uppercase;
+}
+  
+.content-details p {
+    color: #fff;
+    font-size: 0.8em;
 }
   
 .fadeIn-bottom {
@@ -395,268 +384,4 @@ nav > li {
   
 .fadeIn-right {
     left: 80%;
-}
-
-@media only screen and (max-width: 416px){
-    .container-video {  
-        display: grid;      
-        grid-template-columns: repeat(12, 1fr);  
-        grid-template-rows: auto 1fr 1fr;  
-        grid-gap: 5px;  
-        padding-left: 8%;
-        padding-right: 8%;
-        grid-template-areas:  
-        "h h h h h h h h h h h h"  
-        "a a a a a a a a a a a a" 
-        "b b b b b b b b b b b b"  
-        "c c c c c c c c c c c c" 
-        "d d d d d d d d d d d d"
-        "f f f f f f f f f f f f";
-    }
-
-    .footer-video {
-        display: none;
-    }
-}
-
-/* Music */
-
-.container-music {  
-    display: grid;      
-    grid-template-columns: repeat(12, 1fr);  
-    grid-template-rows: repeat(6, 1fr);  
-    grid-gap: 5px; 
-    grid-column-gap: 20px;  
-    padding-left: 8%;
-    padding-right: 8%;
-    grid-template-areas:  
-    "h h h h h h h h h h h h"  
-    "e e e e e e k k k k k k"  
-    "e e e e e e k k k k k k"
-    "e e e e e e j j j j j j"
-    "e e e e e e g g g g g g"
-    "f f f f f f f f f f f f";
-}
-
-.head-music {      
-    grid-area: h;  
-}
-
-.footer-music {
-    grid-area: f; 
-    height: 70px; 
-}
-
-.ep {  
-    grid-area: e;  
-}
-
-.ep > img {
-    object-fit: contain; 
-    width: 100%; 
-    max-height: 600px;
-}
-
-.music-k {
-    grid-area: k;
-}
-
-.music-k > .ep-title {
-    object-fit: contain; 
-    text-align: center;
-    font-size: 48px; 
-    color: #fff; 
-    margin: 0; 
-    width: 100%; 
-}
-
-.music-k > table {
-    font-family: 'Kanit', sans-serif;
-    object-fit: contain;
-    text-align: center;
-    padding-top: 20px; 
-    border: 0;
-    font-size: 20px;
-    width: 100%;
-}
-
-.music-g {
-    grid-area: g;
-    align-items: center; 
-}
-
-.fabIcons {
-    display: flex;
-    justify-content: space-around;
-}
-
-i {
-    font-family:'FontAwesome';
-    font-size: 50px;
-    color: #1d2e4c;
-    transition: 0.5s;
-}
-
-i.fab:hover {
-    color: #3a527c;
-}
-
-.music-j {
-    grid-area: j; 
-    align-items: center;   
-}
-
-.listen {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
-    background: #de68c1;
-    font-family: 'Kanit', sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    align-items: center; 
-    height: 50px;
-    font-size: 1.25em;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    border: none;
-}
-
-.listen:hover {
-    background: #e794ce;
-}
-
-@media only screen and (max-width: 376px) {
-    i {
-        font-size: 40px;
-    }
-}
-
-@media screen and (max-width: 824px) {
-    .music-k > .ep-title {
-        font-size: 36px; 
-        text-align: center;
-    }
-    
-    i {
-        font-size: 36px;
-    }
-    
-    .container-music {  
-        display: grid;      
-        grid-template-columns: repeat(12, 1fr);  
-        grid-template-rows: 1fr 1fr 1fr auto;  
-        grid-gap: 5px; 
-        grid-column-gap: 20px;  
-        padding-left: 8%;
-        padding-right: 8%;
-        grid-template-areas:  
-        "h h h h h h h h h h h h"  
-        "e e e e e e k k k k k k"  
-        "e e e e e e k k k k k k"
-        "g g g g g g j j j j j j"
-        "f f f f f f f f f f f f";
-    }
-
-    .listen {
-        margin-top: 10px; 
-    }
-
-    .fabIcons {
-        margin-top: 10px;
-    }
-}
-
-@media (orientation: landscape) and (max-width: 668px) {
-    .music-k > .ep-title {
-        font-size: 25px; 
-    }
-
-    .music-k > table {
-        font-size: 14px; 
-        width: 100%;
-        text-align: center;
-    }
-
-    .listen {
-        margin-top: 0; 
-    }
-
-    .fabIcons {
-        margin-top: 0;
-    }
-}
-
-@media only screen and (max-width: 416px) {
-    .container-music {  
-        display: grid;      
-        grid-template-columns: repeat(12, 1fr);  
-        grid-template-rows: 1fr auto;  
-        grid-gap: 5px; 
-        grid-column-gap: 20px;  
-        padding-left: 8%;
-        padding-right: 8%;
-        grid-template-areas:  
-        "h h h h h h h h h h h h"  
-        "e e e e e e e e e e e e"  
-        "e e e e e e e e e e e e"
-        "k k k k k k k k k k k k"
-        "k k k k k k k k k k k k"
-        "j j j j j j j j j j j j"
-        "g g g g g g g g g g g g"
-        "f f f f f f f f f f f f";
-    }
-
-    .music-k > table {
-        font-size: 16px; 
-        width: 100%;
-        text-align: center;
-    }
-
-    .music-k > .ep-title {
-        font-size: 36px;
-        text-align: center;
-    }
-
-    .listen {
-        margin-top: 20px;
-    }
-
-    .music-g {
-        margin-top: 25px; 
-        margin-bottom: 25px; 
-    }
-
-    .footer-music {
-        display: none;
-    }
-
-}
-
-/* Shows */
-
-.container-shows {  
-    display: grid;      
-    grid-template-columns: repeat(12, 1fr);  
-    grid-template-rows: repeat(6, 1fr);  
-    grid-gap: 5px; 
-    grid-column-gap: 20px;  
-    padding-left: 8%;
-    padding-right: 8%;
-    grid-template-areas:  
-    "h h h h h h h h h h h h"  
-    "m m m m m m m m m m m m"  
-    "n n n n n n n n n n n n"
-    "o o o o o o o o o o o o"
-    "p p p p p p p p p p p p"
-    "f f f f f f f f f f f f";
-}
-
-.head-shows {      
-    grid-area: h;  
-}
-
-.footer-shows {
-    grid-area: f; 
-    height: 70px; 
 }

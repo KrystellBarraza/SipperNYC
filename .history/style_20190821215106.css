@@ -532,6 +532,52 @@ i.fab:hover {
     }
 }
 
+@media only screen and (max-width: 416px) {
+    .container-music {  
+        display: grid;      
+        grid-template-columns: repeat(12, 1fr);  
+        grid-template-rows: 1fr auto;  
+        grid-gap: 5px; 
+        grid-column-gap: 20px;  
+        padding-left: 8%;
+        padding-right: 8%;
+        grid-template-areas:  
+        "h h h h h h h h h h h h"  
+        "e e e e e e e e e e e e"  
+        "e e e e e e e e e e e e"
+        "k k k k k k k k k k k k"
+        "k k k k k k k k k k k k"
+        "j j j j j j j j j j j j"
+        "g g g g g g g g g g g g"
+        "f f f f f f f f f f f f";
+    }
+
+    .music-k > table {
+        font-size: 16px; 
+        width: 100%;
+        text-align: center;
+    }
+
+    .music-k > .ep-title {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .listen {
+        margin-top: 20px;
+    }
+
+    .music-g {
+        margin-top: 25px; 
+        margin-bottom: 25px; 
+    }
+
+    .footer-music {
+        display: none;
+    }
+
+}
+
 @media screen and (max-width: 824px) {
     .music-k > .ep-title {
         font-size: 36px; 
@@ -587,52 +633,6 @@ i.fab:hover {
     }
 }
 
-@media only screen and (max-width: 416px) {
-    .container-music {  
-        display: grid;      
-        grid-template-columns: repeat(12, 1fr);  
-        grid-template-rows: 1fr auto;  
-        grid-gap: 5px; 
-        grid-column-gap: 20px;  
-        padding-left: 8%;
-        padding-right: 8%;
-        grid-template-areas:  
-        "h h h h h h h h h h h h"  
-        "e e e e e e e e e e e e"  
-        "e e e e e e e e e e e e"
-        "k k k k k k k k k k k k"
-        "k k k k k k k k k k k k"
-        "j j j j j j j j j j j j"
-        "g g g g g g g g g g g g"
-        "f f f f f f f f f f f f";
-    }
-
-    .music-k > table {
-        font-size: 16px; 
-        width: 100%;
-        text-align: center;
-    }
-
-    .music-k > .ep-title {
-        font-size: 36px;
-        text-align: center;
-    }
-
-    .listen {
-        margin-top: 20px;
-    }
-
-    .music-g {
-        margin-top: 25px; 
-        margin-bottom: 25px; 
-    }
-
-    .footer-music {
-        display: none;
-    }
-
-}
-
 /* Shows */
 
 .container-shows {  
@@ -654,9 +654,4 @@ i.fab:hover {
 
 .head-shows {      
     grid-area: h;  
-}
-
-.footer-shows {
-    grid-area: f; 
-    height: 70px; 
 }
