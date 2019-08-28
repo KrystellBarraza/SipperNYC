@@ -734,35 +734,14 @@ i.fab:hover {
     background-color: #e794ce;
 }
 
-@media screen and (max-width: 824px) {
-    .container-shows { 
-        display: grid;      
-        grid-template-columns: repeat(12, 1fr);  
-        grid-template-rows: 1fr auto;  
-        grid-gap: 30px; 
-        grid-column-gap: 20px;  
-        padding-left: 8%;
-        padding-right: 8%;
-        grid-template-areas:  
-        "h h h h h h h h h h h h"  
-        "m m m m m m m m m m m m"  
-        "m m m m m m m m m m m m"
-        "n n n n n n n n n n n n"
-        "n n n n n n n n n n n n"
-        "o o o o o o o o o o o o"
-        "o o o o o o o o o o o o"
-        "p p p p p p p p p p p p"
-        "p p p p p p p p p p p p"
-        "f f f f f f f f f f f f";
-    }
-    
+@media screen and (max-width: 769px) {
     .dates-container-flex {
-        height: 250px;
+        height: 275px;
     }
     
     .date {
         width: 100%; 
-        height: 110px; 
+        height: 125px; 
     }
 
     .location {
@@ -777,6 +756,7 @@ i.fab:hover {
 
     .tickets {
         width: 100%; 
-        height: 40px;
+        height: 50px;
     }
 }
+
