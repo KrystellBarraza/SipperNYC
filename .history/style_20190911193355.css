@@ -11,18 +11,17 @@ body {
     background-color: #dacfca;
 }
 
+p, li {
+    font-family: 'Kanit', sans-serif; 
+}
+
 p {
-    font-family: 'Kanit', sans-serif;
     font-size: 18px;
     margin: 0; 
 }
 
-li {
-    font-family: 'Mitr', sans-serif;
-}
-
 h1 {
-    font-family: 'Mitr', sans-serif;; 
+    font-family: 'Kanit', sans-serif; 
     color: #fff;
     font-size: 48px;
 }
@@ -33,10 +32,6 @@ a {
 }
 
 /* Header - Home */
-
-.web-title {
-    font-family: 'Mansalva', cursive;
-}
 
 .container-home {  
     display: grid;      
@@ -59,7 +54,7 @@ a {
 }
 
 .inlineMenu {
-    font-family: 'Mitr', sans-serif; 
+    font-family: 'Kanit', sans-serif; 
     font-size: 22px;
     word-spacing: 1em;
     top: 16%; 
@@ -74,37 +69,6 @@ a {
     }
 }
 
-/* Social Icons Home Page */
-
-.social-icons-home {
-    top: 6%; 
-    right: 8%; 
-    position: absolute;   
-}
-
-.home-social {
-    font-size: 35px; 
-    letter-spacing: 15px; 
-}
-
-@media (orientation: portrait) and (max-width: 1024px) {
-    .social-icons-home {
-        top: 4.25%;
-    }
-}
-
-@media (orientation: landscape) and (max-width: 824px) {
-    .social-icons-home {
-        display: none !important;
-    }
-}
-
-@media (orientation: portrait) and (max-width: 414px) {
-    .social-icons-home {
-        display: none !important; 
-    }
-}
-
 /* Toggled Header Nav */ 
 
 #toggleText {
@@ -116,7 +80,7 @@ a {
 }
 
 #menu-container {
-    background-color: #121d30;
+    background-color: #1d2e4c;
     position: absolute;
     width: 100%;
     left: 0%;
@@ -125,7 +89,7 @@ a {
 }
 
 #menu {
-    background-color: #121d30;
+    background-color: #1d2e4c;
     position: absolute;
     top: 0%;
     left: 0%;
@@ -250,9 +214,23 @@ nav > li {
 
 }
 
+/* Inline Menu Queries */
+
+@media only screen and (max-width: 416px) {
+    .inlineMenu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 766px){
+    .inlineMenu {
+        display: none;
+    }
+}
+
 /* Mobile Landscape Queries */
 
-@media (orientation: landscape) and (max-width: 824px) {
+@media (orientation: landscape) and (max-width: 766px) {
     .menu {
         display: none;
     }
@@ -276,26 +254,6 @@ nav > li {
         object-fit: contain; 
         width: 100%; 
     }    
-}
-
-/* Inline Menu Queries */
-
-@media screen and (max-width: 416px) {
-    .inlineMenu {
-        display: none;
-    }
-}
-
-@media (orientation: portrait) and (min-width: 768px) {
-    .inlineMenu {
-        display: none; 
-    }
-}
-
-@media (orientation: landscape) and (min-width: 824px) {
-    .inlineMenu {
-        display: none;
-    }
 }
 
 /* Album */
@@ -536,12 +494,12 @@ nav > li {
 i {
     font-family:'FontAwesome';
     font-size: 50px;
-    color: #121d30;
+    color: #1d2e4c;
     transition: 0.5s;
 }
 
 i.fab:hover {
-    color: #424e64;
+    color: #3a527c;
 }
 
 .music-j {
@@ -735,8 +693,8 @@ i.fab:hover {
     background-color: rgba(255, 255, 255, 0.568);
 }
 
-.date-box {
-    background-color: #121d30;
+.date {
+    background-color: #1d2e4c;
     color: #FFF;
     width: 130px; 
     height: 115px; 
@@ -744,37 +702,21 @@ i.fab:hover {
     line-height: 2em; 
     order: 1; 
     align-self: flex-start;
-    padding-top: 18px; 
-    font-family: 'Kanit', sans-serif;
-}
-
-.month {
-    font-size: 1em; 
-}
-
-.date {
-    font-size: 2.75em;
+    padding-top: 25px; 
+    font-size: 2em; 
 }
 
 .location {
-    color: #121d30;
     width: 250px; 
     height: 115px; 
     text-align: center;
-    font-family: 'Kanit', sans-serif;
-    font-size: 1.5em;
-    padding-top: 38px; 
     order: 2; 
 }
 
 .venue {
-    color: #121d30;
     width: 250px; 
     height: 115px; 
     text-align: center;
-    font-family: 'Kanit', sans-serif;
-    font-size: 1.5em;
-    padding-top: 38px; 
     order: 3; 
 }
 
@@ -786,9 +728,6 @@ i.fab:hover {
     text-align: center; 
     order: 4; 
     align-self: flex-end; 
-    font-family: 'Kanit', sans-serif;
-    font-size: 1.5em; 
-    padding-top: 38px; 
     -webkit-transition: 0.5s;
             transition: 0.5s;
 }
@@ -797,7 +736,7 @@ i.fab:hover {
     background-color: #e794ce;
 }
 
-@media screen and (max-width: 905px) {
+@media screen and (max-width: 824px) {
     .container-shows { 
         display: grid;      
         grid-template-columns: repeat(12, 1fr);  
@@ -823,7 +762,7 @@ i.fab:hover {
         height: 250px;
     }
     
-    .date-box {
+    .date {
         width: 100%; 
         height: 110px; 
     }
@@ -831,104 +770,15 @@ i.fab:hover {
     .location {
         width: 100%; 
         height: 50px; 
-        padding-top: 10px; 
     }
 
     .venue {
         width: 100%; 
         height: 50px; 
-        padding-top: 0px;
     }
 
     .tickets {
         width: 100%; 
         height: 40px;
-        padding-top: 0px; 
-    }
-}
-
-.container-about {
-    display: grid; 
-    grid-template-columns: repeat(12, 1fr);  
-    grid-template-rows: repeat(7, 1fr);  
-    grid-gap: 5px; 
-    grid-column-gap: 20px;  
-    padding-left: 8%;
-    padding-right: 8%;
-    grid-template-areas:  
-    "h h h h h h h h h h h h"  
-    "r r r r r r r r r r r r" 
-    "r r r r r r r r r r r r"
-    "r r r r r r r r r r r r" 
-    "s s s s s s s s s s s s"
-    "u u u u u u u u u u u u"
-    "f f f f f f f f f f f f";
-}
-
-.head-about {
-    grid-area: h; 
-}
-
-.about-image {
-    grid-area: r;
-}
-
-.about-image > img {
-    object-fit: contain; 
-    width: 100%; 
-    max-height: 400px;
-}
-
-.about-text {
-    grid-area: s;
-    color: #FFF;
-    text-align: center;  
-}
-
-.about-font {
-    font-size: 1.5em; 
-}
-
-.about-u {
-    grid-area: u; 
-}
-
-.about-footer {
-    grid-area: f; 
-    color: #121d30;
-    text-align: center;
-}
-
-@media screen and (max-width: 824px) {
-    .container-about {  
-        display: grid;      
-        grid-template-columns: repeat(9, 1fr);  
-        grid-template-rows: 1fr auto;  
-        grid-gap: 5px; 
-        grid-column-gap: 20px;  
-        padding-left: 8%;
-        padding-right: 8%;
-        grid-template-areas:  
-        "h h h h h h h h h h h h"  
-        "r r r r r r r r r r r r"  
-        "r r r r r r r r r r r r"
-        "s s s s s s s s s s s s"
-        "s s s s s s s s s s s s"
-        "s s s s s s s s s s s s"
-        "s s s s s s s s s s s s"
-        "u u u u u u u u u u u u"
-        "f f f f f f f f f f f f";
-    }
-
-    .about-text {
-        padding: 10px; 
-    }
-
-    .about-u {
-        padding-bottom: 30px; 
-    }
-
-    .about-footer {
-        padding-bottom: 20px; 
     }
 }

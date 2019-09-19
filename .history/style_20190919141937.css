@@ -74,34 +74,28 @@ a {
     }
 }
 
-/* Social Icons Home Page */
+/* Social Icons Home */
 
 .social-icons-home {
-    top: 6%; 
-    right: 8%; 
-    position: absolute;   
+    top: 8%; 
+    right: 9%; 
+    position: absolute; 
 }
 
-.home-social {
-    font-size: 35px; 
+.home-s {
+    font-size: 40px; 
     letter-spacing: 15px; 
 }
 
-@media (orientation: portrait) and (max-width: 1024px) {
+@media screen and (max-width: 450px) {
     .social-icons-home {
-        top: 4.25%;
+        visibility: hidden;
     }
 }
 
-@media (orientation: landscape) and (max-width: 824px) {
+@media screen and (min-width: 450px) {
     .social-icons-home {
-        display: none !important;
-    }
-}
-
-@media (orientation: portrait) and (max-width: 414px) {
-    .social-icons-home {
-        display: none !important; 
+        visibility: hidden;
     }
 }
 
@@ -116,7 +110,7 @@ a {
 }
 
 #menu-container {
-    background-color: #121d30;
+    background-color: #1d2e4c;
     position: absolute;
     width: 100%;
     left: 0%;
@@ -125,7 +119,7 @@ a {
 }
 
 #menu {
-    background-color: #121d30;
+    background-color: #1d2e4c;
     position: absolute;
     top: 0%;
     left: 0%;
@@ -286,7 +280,7 @@ nav > li {
     }
 }
 
-@media (orientation: portrait) and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .inlineMenu {
         display: none; 
     }
@@ -536,12 +530,12 @@ nav > li {
 i {
     font-family:'FontAwesome';
     font-size: 50px;
-    color: #121d30;
+    color: #1d2e4c;
     transition: 0.5s;
 }
 
 i.fab:hover {
-    color: #424e64;
+    color: #3a527c;
 }
 
 .music-j {
@@ -736,7 +730,7 @@ i.fab:hover {
 }
 
 .date-box {
-    background-color: #121d30;
+    background-color: #1d2e4c;
     color: #FFF;
     width: 130px; 
     height: 115px; 
@@ -757,7 +751,7 @@ i.fab:hover {
 }
 
 .location {
-    color: #121d30;
+    color: #1d2e4c;
     width: 250px; 
     height: 115px; 
     text-align: center;
@@ -768,7 +762,7 @@ i.fab:hover {
 }
 
 .venue {
-    color: #121d30;
+    color: #1d2e4c;
     width: 250px; 
     height: 115px; 
     text-align: center;
@@ -895,7 +889,7 @@ i.fab:hover {
 
 .about-footer {
     grid-area: f; 
-    color: #121d30;
+    color: #1d2e4c;
     text-align: center;
 }
 

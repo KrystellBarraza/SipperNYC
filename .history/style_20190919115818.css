@@ -67,41 +67,21 @@ a {
     position: absolute;
 }
 
+.social-home {
+    top: 8%; 
+    right: 10%; 
+    position: absolute; 
+}
+
+.home-s {
+    font-size: 40px; 
+    letter-spacing: 15px; 
+}
+
 @media (min-width: 566px) and (max-width: 569px) {
     .inlineMenu {
         top: 19.5%;
         word-spacing: .5em;
-    }
-}
-
-/* Social Icons Home Page */
-
-.social-icons-home {
-    top: 6%; 
-    right: 8%; 
-    position: absolute;   
-}
-
-.home-social {
-    font-size: 35px; 
-    letter-spacing: 15px; 
-}
-
-@media (orientation: portrait) and (max-width: 1024px) {
-    .social-icons-home {
-        top: 4.25%;
-    }
-}
-
-@media (orientation: landscape) and (max-width: 824px) {
-    .social-icons-home {
-        display: none !important;
-    }
-}
-
-@media (orientation: portrait) and (max-width: 414px) {
-    .social-icons-home {
-        display: none !important; 
     }
 }
 
@@ -116,7 +96,7 @@ a {
 }
 
 #menu-container {
-    background-color: #121d30;
+    background-color: #1d2e4c;
     position: absolute;
     width: 100%;
     left: 0%;
@@ -125,7 +105,7 @@ a {
 }
 
 #menu {
-    background-color: #121d30;
+    background-color: #1d2e4c;
     position: absolute;
     top: 0%;
     left: 0%;
@@ -250,9 +230,23 @@ nav > li {
 
 }
 
+/* Inline Menu Queries */
+
+@media only screen and (max-width: 416px) {
+    .inlineMenu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 766px){
+    .inlineMenu {
+        display: none;
+    }
+}
+
 /* Mobile Landscape Queries */
 
-@media (orientation: landscape) and (max-width: 824px) {
+@media (orientation: landscape) and (max-width: 766px) {
     .menu {
         display: none;
     }
@@ -276,26 +270,6 @@ nav > li {
         object-fit: contain; 
         width: 100%; 
     }    
-}
-
-/* Inline Menu Queries */
-
-@media screen and (max-width: 416px) {
-    .inlineMenu {
-        display: none;
-    }
-}
-
-@media (orientation: portrait) and (min-width: 768px) {
-    .inlineMenu {
-        display: none; 
-    }
-}
-
-@media (orientation: landscape) and (min-width: 824px) {
-    .inlineMenu {
-        display: none;
-    }
 }
 
 /* Album */
@@ -536,12 +510,12 @@ nav > li {
 i {
     font-family:'FontAwesome';
     font-size: 50px;
-    color: #121d30;
+    color: #1d2e4c;
     transition: 0.5s;
 }
 
 i.fab:hover {
-    color: #424e64;
+    color: #3a527c;
 }
 
 .music-j {
@@ -736,7 +710,7 @@ i.fab:hover {
 }
 
 .date-box {
-    background-color: #121d30;
+    background-color: #1d2e4c;
     color: #FFF;
     width: 130px; 
     height: 115px; 
@@ -757,7 +731,7 @@ i.fab:hover {
 }
 
 .location {
-    color: #121d30;
+    color: #1d2e4c;
     width: 250px; 
     height: 115px; 
     text-align: center;
@@ -768,7 +742,7 @@ i.fab:hover {
 }
 
 .venue {
-    color: #121d30;
+    color: #1d2e4c;
     width: 250px; 
     height: 115px; 
     text-align: center;
@@ -895,7 +869,7 @@ i.fab:hover {
 
 .about-footer {
     grid-area: f; 
-    color: #121d30;
+    color: #1d2e4c;
     text-align: center;
 }
 

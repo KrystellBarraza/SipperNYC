@@ -536,12 +536,12 @@ nav > li {
 i {
     font-family:'FontAwesome';
     font-size: 50px;
-    color: #121d30;
+    color: #1d2e4c;
     transition: 0.5s;
 }
 
 i.fab:hover {
-    color: #424e64;
+    color: #3a527c;
 }
 
 .music-j {
@@ -736,7 +736,7 @@ i.fab:hover {
 }
 
 .date-box {
-    background-color: #121d30;
+    background-color: #1d2e4c;
     color: #FFF;
     width: 130px; 
     height: 115px; 
@@ -757,7 +757,7 @@ i.fab:hover {
 }
 
 .location {
-    color: #121d30;
+    color: #1d2e4c;
     width: 250px; 
     height: 115px; 
     text-align: center;
@@ -768,7 +768,7 @@ i.fab:hover {
 }
 
 .venue {
-    color: #121d30;
+    color: #1d2e4c;
     width: 250px; 
     height: 115px; 
     text-align: center;
@@ -895,7 +895,7 @@ i.fab:hover {
 
 .about-footer {
     grid-area: f; 
-    color: #121d30;
+    color: #1d2e4c;
     text-align: center;
 }
 
